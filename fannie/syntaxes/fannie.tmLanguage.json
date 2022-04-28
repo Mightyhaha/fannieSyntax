@@ -7,25 +7,53 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#main"
+		},
+		{
+			"include": "#recipes"
+		},
+		{
+			"include": "#ingredients"
+		},
+		{
+			"include": "#tools"
+		},
+		{
+			"include": "#actions"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"main":{
 			"patterns": [{
-				"name": "keyword.control.fannie",
-				"match": "\\b(if|while|for|return)\\b"
+				"name": "storage.modifier.fannie",
+				"match": "\\b(main)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.fannie",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.fannie",
-					"match": "\\\\."
-				}
-			]
+		"recipes":{
+			"patterns": [{
+				"name": "storage.modifier.fannie",
+				"match": "b\\(recipe)\\b"
+			}]
+		},
+		"ingredients":{
+			"patterns": [{
+				"name": "storage.type.fannie",
+				"match": "b\\(ingredient|vegetable|fruit|meat|liquid|spice|nut|dry)\\b"
+			}]
+		},
+		"tools":{
+			"patterns": [{
+				"name":"storage.type.fannie",
+				"match": "b\\(tool)\\b"
+			}]
+		},
+		"actions":{
+			"patterns": [{
+				"name":"keyword.operator",
+				"match": "b\\(do|contain|content|in|serve|)\\b"
+			}]
 		}
 	},
 	"scopeName": "source.fannie"
