@@ -1,0 +1,25 @@
+{
+    "name": "fannie",
+    "displayName": "Fannie Recipe Language",
+    "description": "Syntax Support for Fannie Recipe Language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "fannie",
+            "aliases": ["Fannie Recipe Language", "fannie"],
+            "extensions": [".fannie"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "fannie",
+            "scopeName": "source.fannie",
+            "path": "./syntaxes/fannie.tmLanguage.json"
+        }]
+    }
+}
