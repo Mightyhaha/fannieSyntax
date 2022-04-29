@@ -51,7 +51,7 @@
 		},
 		"actions":{
 			"patterns": [{
-				"name":"keyword.operator",
+				"name":"keyword.operator.fannie",
 				"match": "b\\(do|contain|content|in|serve|)\\b"
 			}]
 		}
