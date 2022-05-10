@@ -3,12 +3,6 @@
 	"name": "Fannie Recipe Language",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#strings"
-		},
-		{
 			"include": "#main"
 		},
 		{
@@ -52,7 +46,7 @@
 		"actions":{
 			"patterns": [{
 				"name":"keyword.operator.fannie",
-				"match": "b\\(do|contain|content|in|serve|)\\b"
+				"match": "b\\(do|contain|content|in|serve)\\b"
 			}]
 		}
 	},
